@@ -12,18 +12,6 @@ body{
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
 
-h1 {
-	color: black;
-	font-family: 'Source Sans Pro', sans-serif;
-	position: absolute;
-	top:30%;
-	left:50%;
-	width:475px;
-	height:145px;
-	margin-top:-72.5px;
-	margin-left:-237.5px;
-}
-
 .machine-wrap{
 	top:50%;
 	left:50%;
