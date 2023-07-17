@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set some basic styles for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-transform: none;
+  }
+  
+  /* About section */
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  /* Main content */
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Gallery section */
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 10px;
+  }
+  
+  /* Section title */
+  
+  .section-title {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-title h2 {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  .section-title h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background-color: #333;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container {
+      margin-bottom: 20px;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gallery-container img {
+      max-height: 200px;
+    }
+  }
+  
